@@ -1,0 +1,67 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head id="head">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title><h:outputText value="Registrar Ciudad" /></title>
+</h:head>
+<h:body id="body">
+	<f:view contentType="text/html">
+		<form action="/crear" method="post">
+			<table>
+				<tr>
+					<td><h:outputText value="nombre:" /></td>
+					<td><h:inputText id="nombre" /></td>
+				</tr>
+				<tr>
+					<td><h:outputText value="apellido:" /></td>
+					<td><h:inputText id="apellido" /></td>
+				</tr>
+				<tr>
+					<td><h:outputText value="cedula:" /></td>
+					<td><h:inputText id="cedula" /></td>
+				</tr>
+				<tr>
+					<td><h:outputText value="estatura:" /></td>
+					<td><h:inputText id="estatura" /></td>
+				</tr>
+				<tr>
+					<td><h:outputText value="dia:" /></td>
+					<td><h:inputText id="dia" /></td>
+				</tr>
+				<tr>
+					<td><h:outputText value="mes:" /></td>
+					<td><h:inputText id="mes" /></td>
+				</tr>
+				<tr>
+					<td><h:outputText value="anio:" /></td>
+					<td><h:inputText id="anio" /></td>
+				</tr>
+				<tr>
+					<td><h:outputText value="peso:" /></td>
+					<td><h:inputText id="peso" /></td>
+				</tr>
+				<tr>
+					<td><h:outputText value="rh:" /></td>
+					<td><h:inputText id="rh" /></td>
+				</tr>
+				<tr>
+					<td><h:outputText value="eps:" /></td>
+					<td><h:inputText id="eps" /></td>
+				</tr>
+				<tr>
+					<td><h:outputText value="genero:" /></td>
+					<td><h:inputText id="genero" /></td>
+				</tr>
+			</table>
+			<p>
+				<h:commandButton value="Aceptar" />
+			</p>
+		</form>
+	</f:view>
+</h:body>
+</html>

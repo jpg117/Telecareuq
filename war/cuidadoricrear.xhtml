@@ -1,0 +1,78 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head id="head">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title><h:outputText value="Registrar Ciudad" /></title>
+</h:head>
+<h:body id="body">
+	<div id="header">
+		<h:graphicImage value="/resources/tuq1.jpg" />
+	</div>
+	<f:view contentType="text/html">
+		<form action="/crear" method="post">
+			<table>
+				<tr>
+					<td><h:outputText value="Nombre:" /></td>
+					<td><h:inputText id="nombre" /></td>
+				</tr>
+				<tr>
+					<td><h:outputText value="Apellido:" /></td>
+					<td><h:inputText id="apellido" /></td>
+				</tr>
+				<tr>
+					<td><h:outputText value="Cedula:" /></td>
+					<td><h:inputText id="cedula" /></td>
+				</tr>
+				<tr>
+					<td><h:outputText value="Correo:" /></td>
+					<td><h:inputText id="correo" /></td>
+				</tr>
+				<tr>
+					<td><h:outputText value="Celular:" /></td>
+					<td><h:inputText id="celular" /></td>
+				</tr>
+				<tr>
+					<td><h:outputText value="Direccion:" /></td>
+					<td><h:inputText id="direccion" /></td>
+				</tr>
+				<tr>
+					<td><h:outputText value="Contraseña:" /></td>
+					<td><h:inputText id="contrasena" /></td>
+				</tr>
+				<tr>
+				<td><h:outputText value="Parentesco:" /></td>
+					<td><h:selectOneMenu id="parentesco" style="width: 154px; ">
+							<f:selectItem itemValue="Seleccione uno"
+								itemLabel="Seleccione uno" />
+							<f:selectItem itemValue="Padre" itemLabel="Padre" />
+							<f:selectItem itemValue="Madre" itemLabel="Madre" />
+							<f:selectItem itemValue="Hij@" itemLabel="Hij@" />
+							<f:selectItem itemValue="Ti@" itemLabel="Ti@" />
+							<f:selectItem itemValue="Amig@" itemLabel="Amig@" />
+						</h:selectOneMenu></td>
+				</tr>
+				<tr>
+					<td><h:outputText value="Pais:" /></td>
+					<td><h:inputText id="pais" /></td>
+					<td><h:outputText value="Departamento:" /></td>
+					<td><h:inputText id="departamento" /></td>
+					<td><h:outputText value="Ciudad:" /></td>
+					<td><h:inputText id="ciudad" /></td>
+				</tr>
+				<tr>
+					<td><h:outputText value="Departamento:" /></td>
+					<td><h:inputText id="departamento" /></td>
+				</tr>
+			</table>
+			<p>
+				<h:commandButton value="Aceptar" />
+			</p>
+		</form>
+	</f:view>
+</h:body>
+</html>

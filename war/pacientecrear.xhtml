@@ -1,0 +1,323 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head id="head">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title><h:outputText value="Registrar Paciente" /></title>
+</h:head>
+<h:body id="body">
+	<div id="header">
+		<h:graphicImage value="/resources/tuq.jpg" />
+	</div>
+	<f:view contentType="text/html">
+		<form action="/crearpaciente" method="post">
+			<table>
+				<tr><td><h:outputText value="Nombre:" /></td>
+					<td><h:inputText id="nombre" required="true" /></td>
+				</tr>
+				<tr>
+					<td><h:outputText value="Apellido:" /></td>
+					<td><h:inputText id="apellido" required="true" /></td>
+				</tr>
+				<tr>
+					<td><h:outputText value="Cedula:" /></td>
+					<td><h:inputText id="cedula" required="true" /></td>
+				</tr>
+				<tr>
+					<td><h:outputText value="Estatura:" /></td>
+					<td><h:selectOneMenu id="estatura" style="width: 155px; ">
+							<f:selectItem itemValue="Escoger medida"
+								itemLabel="Escoger medida" />
+							<f:selectItem itemValue="1.99" itemLabel="1.99" />
+							<f:selectItem itemValue="1.98" itemLabel="1.98" />
+							<f:selectItem itemValue="1.97" itemLabel="1.97" />
+							<f:selectItem itemValue="1.96" itemLabel="1.96" />
+							<f:selectItem itemValue="1.95" itemLabel="1.95" />
+							<f:selectItem itemValue="1.94" itemLabel="1.94" />
+							<f:selectItem itemValue="1.93" itemLabel="1.93" />
+							<f:selectItem itemValue="1.92" itemLabel="1.92" />
+							<f:selectItem itemValue="1.91" itemLabel="1.91" />
+							<f:selectItem itemValue="1.90" itemLabel="1.90" />
+							<f:selectItem itemValue="1.89" itemLabel="1.89" />
+							<f:selectItem itemValue="1.88" itemLabel="1.88" />
+							<f:selectItem itemValue="1.87" itemLabel="1.87" />
+							<f:selectItem itemValue="1.86" itemLabel="1.86" />
+							<f:selectItem itemValue="1.85" itemLabel="1.85" />
+							<f:selectItem itemValue="1.84" itemLabel="1.84" />
+							<f:selectItem itemValue="1.83" itemLabel="1.83" />
+							<f:selectItem itemValue="1.82" itemLabel="1.82" />
+							<f:selectItem itemValue="1.81" itemLabel="1.81" />
+							<f:selectItem itemValue="1.80" itemLabel="1.80" />
+							<f:selectItem itemValue="1.79" itemLabel="1.79" />
+							<f:selectItem itemValue="1.78" itemLabel="1.78" />
+							<f:selectItem itemValue="1.77" itemLabel="1.77" />
+							<f:selectItem itemValue="1.76" itemLabel="1.76" />
+							<f:selectItem itemValue="1.75" itemLabel="1.75" />
+							<f:selectItem itemValue="1.74" itemLabel="1.74" />
+							<f:selectItem itemValue="1.73" itemLabel="1.73" />
+							<f:selectItem itemValue="1.72" itemLabel="1.72" />
+							<f:selectItem itemValue="1.71" itemLabel="1.71" />
+							<f:selectItem itemValue="1.70" itemLabel="1.70" />
+							<f:selectItem itemValue="1.69" itemLabel="1.69" />
+							<f:selectItem itemValue="1.68" itemLabel="1.68" />
+							<f:selectItem itemValue="1.69" itemLabel="1.69" />
+							<f:selectItem itemValue="1.68" itemLabel="1.68" />
+							<f:selectItem itemValue="1.67" itemLabel="1.67" />
+							<f:selectItem itemValue="1.66" itemLabel="1.66" />
+							<f:selectItem itemValue="1.65" itemLabel="1.65" />
+							<f:selectItem itemValue="1.64" itemLabel="1.64" />
+							<f:selectItem itemValue="1.63" itemLabel="1.63" />
+							<f:selectItem itemValue="1.62" itemLabel="1.62" />
+							<f:selectItem itemValue="1.61" itemLabel="1.61" />
+							<f:selectItem itemValue="1.60" itemLabel="1.60" />
+							<f:selectItem itemValue="1.59" itemLabel="1.59" />
+							<f:selectItem itemValue="1.58" itemLabel="1.58" />
+							<f:selectItem itemValue="1.57" itemLabel="1.57" />
+							<f:selectItem itemValue="1.56" itemLabel="1.56" />
+							<f:selectItem itemValue="1.55" itemLabel="1.55" />
+							<f:selectItem itemValue="1.54" itemLabel="1.54" />
+							<f:selectItem itemValue="1.53" itemLabel="1.53" />
+							<f:selectItem itemValue="1.52" itemLabel="1.52" />
+							<f:selectItem itemValue="1.51" itemLabel="1.51" />
+							<f:selectItem itemValue="1.50" itemLabel="1.50" />
+							<f:selectItem itemValue="1.49" itemLabel="1.49" />
+							<f:selectItem itemValue="1.48" itemLabel="1.48" />
+							<f:selectItem itemValue="1.47" itemLabel="1.47" />
+							<f:selectItem itemValue="1.46" itemLabel="1.46" />
+							<f:selectItem itemValue="1.45" itemLabel="1.45" />
+							<f:selectItem itemValue="1.44" itemLabel="1.44" />
+							<f:selectItem itemValue="1.43" itemLabel="1.43" />
+							<f:selectItem itemValue="1.42" itemLabel="1.42" />
+							<f:selectItem itemValue="1.41" itemLabel="1.41" />
+							<f:selectItem itemValue="1.40" itemLabel="1.40" />
+							<f:selectItem itemValue="1.39" itemLabel="1.39" />
+							<f:selectItem itemValue="1.38" itemLabel="1.38" />
+							<f:selectItem itemValue="1.37" itemLabel="1.37" />
+							<f:selectItem itemValue="1.36" itemLabel="1.36" />
+							<f:selectItem itemValue="1.35" itemLabel="1.35" />
+							<f:selectItem itemValue="1.34" itemLabel="1.34" />
+							<f:selectItem itemValue="1.33" itemLabel="1.33" />
+							<f:selectItem itemValue="1.32" itemLabel="1.32" />
+							<f:selectItem itemValue="1.31" itemLabel="1.31" />
+							<f:selectItem itemValue="1.30" itemLabel="1.30" />
+							<f:selectItem itemValue="1.29" itemLabel="1.29" />
+							<f:selectItem itemValue="1.28" itemLabel="1.28" />
+							<f:selectItem itemValue="1.27" itemLabel="1.27" />
+							<f:selectItem itemValue="1.26" itemLabel="1.26" />
+							<f:selectItem itemValue="1.25" itemLabel="1.25" />
+							<f:selectItem itemValue="1.24" itemLabel="1.24" />
+							<f:selectItem itemValue="1.23" itemLabel="1.23" />
+							<f:selectItem itemValue="1.22" itemLabel="1.22" />
+							<f:selectItem itemValue="1.21" itemLabel="1.21" />
+							<f:selectItem itemValue="1.20" itemLabel="1.20" />
+							<f:selectItem itemValue="1.19" itemLabel="1.19" />
+							<f:selectItem itemValue="1.18" itemLabel="1.18" />
+							<f:selectItem itemValue="1.17" itemLabel="1.17" />
+							<f:selectItem itemValue="1.16" itemLabel="1.16" />
+							<f:selectItem itemValue="1.15" itemLabel="1.15" />
+							<f:selectItem itemValue="1.14" itemLabel="1.14" />
+							<f:selectItem itemValue="1.13" itemLabel="1.13" />
+							<f:selectItem itemValue="1.12" itemLabel="1.12" />
+							<f:selectItem itemValue="1.11" itemLabel="1.11" />
+							<f:selectItem itemValue="1.10" itemLabel="1.10" />
+						</h:selectOneMenu> <h:outputText value="" /></td>
+				</tr>
+				<tr>
+					<td><h:outputText value="Fecha de Nacimiento:" /></td>
+					<td><h:selectOneMenu id="dia">
+							<f:selectItem itemValue="Dia" itemLabel="Dia" />
+							<f:selectItem itemValue="1" itemLabel="1" />
+							<f:selectItem itemValue="2" itemLabel="2" />
+							<f:selectItem itemValue="3" itemLabel="3" />
+							<f:selectItem itemValue="4" itemLabel="4" />
+							<f:selectItem itemValue="5" itemLabel="5" />
+							<f:selectItem itemValue="6" itemLabel="6" />
+							<f:selectItem itemValue="7" itemLabel="7" />
+							<f:selectItem itemValue="8" itemLabel="8" />
+							<f:selectItem itemValue="9" itemLabel="9" />
+							<f:selectItem itemValue="10" itemLabel="10" />
+							<f:selectItem itemValue="11" itemLabel="11" />
+							<f:selectItem itemValue="12" itemLabel="12" />
+							<f:selectItem itemValue="13" itemLabel="13" />
+							<f:selectItem itemValue="14" itemLabel="14" />
+							<f:selectItem itemValue="15" itemLabel="15" />
+							<f:selectItem itemValue="16" itemLabel="16" />
+							<f:selectItem itemValue="17" itemLabel="17" />
+							<f:selectItem itemValue="18" itemLabel="18" />
+							<f:selectItem itemValue="19" itemLabel="19" />
+							<f:selectItem itemValue="20" itemLabel="20" />
+							<f:selectItem itemValue="21" itemLabel="21" />
+							<f:selectItem itemValue="22" itemLabel="22" />
+							<f:selectItem itemValue="23" itemLabel="23" />
+							<f:selectItem itemValue="24" itemLabel="24" />
+							<f:selectItem itemValue="25" itemLabel="25" />
+							<f:selectItem itemValue="26" itemLabel="26" />
+							<f:selectItem itemValue="27" itemLabel="27" />
+							<f:selectItem itemValue="28" itemLabel="28" />
+							<f:selectItem itemValue="29" itemLabel="29" />
+							<f:selectItem itemValue="30" itemLabel="30" />
+							<f:selectItem itemValue="31" itemLabel="31" />
+						</h:selectOneMenu> <h:selectOneMenu id="mes" style="width: 105px; ">
+							<f:selectItem itemValue="Mes" itemLabel="Mes" />
+							<f:selectItem itemValue="Enero" itemLabel="Enero" />
+							<f:selectItem itemValue="Febrero" itemLabel="Febrero" />
+							<f:selectItem itemValue="Marzo" itemLabel="Marzo" />
+							<f:selectItem itemValue="Abril" itemLabel="Abril" />
+							<f:selectItem itemValue="Mayo" itemLabel="Mayo" />
+							<f:selectItem itemValue="Junio" itemLabel="Junio" />
+							<f:selectItem itemValue="Julio" itemLabel="Julio" />
+							<f:selectItem itemValue="Agosto" itemLabel="Agosto" />
+							<f:selectItem itemValue="Septiembre" itemLabel="Septiembre" />
+							<f:selectItem itemValue="Octubre" itemLabel="Octubre" />
+							<f:selectItem itemValue="Noviembre" itemLabel="Noviembre" />
+							<f:selectItem itemValue="Diciembre" itemLabel="Diciembre" />
+						</h:selectOneMenu> <h:selectOneMenu id="anio">
+							<f:selectItem itemValue="Año" itemLabel="Año" />
+							<f:selectItem itemValue="2000" itemLabel="2000" />
+							<f:selectItem itemValue="1999" itemLabel="1999" />
+							<f:selectItem itemValue="1998" itemLabel="1998" />
+							<f:selectItem itemValue="1997" itemLabel="1997" />
+							<f:selectItem itemValue="1996" itemLabel="1996" />
+							<f:selectItem itemValue="1995" itemLabel="1995" />
+							<f:selectItem itemValue="1994" itemLabel="1994" />
+							<f:selectItem itemValue="1993" itemLabel="1993" />
+							<f:selectItem itemValue="1992" itemLabel="1992" />
+							<f:selectItem itemValue="1991" itemLabel="1991" />
+							<f:selectItem itemValue="1990" itemLabel="1990" />
+							<f:selectItem itemValue="1989" itemLabel="1989" />
+							<f:selectItem itemValue="1988" itemLabel="1988" />
+							<f:selectItem itemValue="1987" itemLabel="1987" />
+							<f:selectItem itemValue="1986" itemLabel="1986" />
+							<f:selectItem itemValue="1985" itemLabel="1985" />
+							<f:selectItem itemValue="1984" itemLabel="1984" />
+							<f:selectItem itemValue="1983" itemLabel="1983" />
+							<f:selectItem itemValue="1982" itemLabel="1982" />
+							<f:selectItem itemValue="1981" itemLabel="1981" />
+							<f:selectItem itemValue="1980" itemLabel="1980" />
+							<f:selectItem itemValue="1979" itemLabel="1979" />
+							<f:selectItem itemValue="1978" itemLabel="1978" />
+							<f:selectItem itemValue="1977" itemLabel="1977" />
+							<f:selectItem itemValue="1976" itemLabel="1976" />
+							<f:selectItem itemValue="1975" itemLabel="1975" />
+							<f:selectItem itemValue="1974" itemLabel="1974" />
+							<f:selectItem itemValue="1973" itemLabel="1973" />
+							<f:selectItem itemValue="1972" itemLabel="1972" />
+							<f:selectItem itemValue="1971" itemLabel="1971" />
+							<f:selectItem itemValue="1970" itemLabel="1970" />
+							<f:selectItem itemValue="1969" itemLabel="1969" />
+							<f:selectItem itemValue="1968" itemLabel="1968" />
+							<f:selectItem itemValue="1967" itemLabel="1967" />
+							<f:selectItem itemValue="1966" itemLabel="1966" />
+							<f:selectItem itemValue="1965" itemLabel="1965" />
+							<f:selectItem itemValue="1964" itemLabel="1964" />
+							<f:selectItem itemValue="1963" itemLabel="1963" />
+							<f:selectItem itemValue="1962" itemLabel="1962" />
+							<f:selectItem itemValue="1961" itemLabel="1961" />
+							<f:selectItem itemValue="1960" itemLabel="1960" />
+							<f:selectItem itemValue="1959" itemLabel="1959" />
+							<f:selectItem itemValue="1958" itemLabel="1958" />
+							<f:selectItem itemValue="1957" itemLabel="1957" />
+							<f:selectItem itemValue="1956" itemLabel="1956" />
+							<f:selectItem itemValue="1955" itemLabel="1955" />
+							<f:selectItem itemValue="1954" itemLabel="1954" />
+							<f:selectItem itemValue="1953" itemLabel="1953" />
+							<f:selectItem itemValue="1952" itemLabel="1952" />
+							<f:selectItem itemValue="1951" itemLabel="1951" />
+							<f:selectItem itemValue="1950" itemLabel="1950" />
+							<f:selectItem itemValue="1949" itemLabel="1949" />
+							<f:selectItem itemValue="1948" itemLabel="1948" />
+							<f:selectItem itemValue="1947" itemLabel="1947" />
+							<f:selectItem itemValue="1946" itemLabel="1946" />
+							<f:selectItem itemValue="1945" itemLabel="1945" />
+							<f:selectItem itemValue="1944" itemLabel="1944" />
+							<f:selectItem itemValue="1943" itemLabel="1943" />
+							<f:selectItem itemValue="1942" itemLabel="1942" />
+							<f:selectItem itemValue="1941" itemLabel="1941" />
+							<f:selectItem itemValue="1940" itemLabel="1940" />
+							<f:selectItem itemValue="1939" itemLabel="1939" />
+							<f:selectItem itemValue="1938" itemLabel="1938" />
+							<f:selectItem itemValue="1937" itemLabel="1937" />
+							<f:selectItem itemValue="1936" itemLabel="1936" />
+							<f:selectItem itemValue="1935" itemLabel="1935" />
+							<f:selectItem itemValue="1934" itemLabel="1934" />
+							<f:selectItem itemValue="1933" itemLabel="1933" />
+							<f:selectItem itemValue="1932" itemLabel="1932" />
+							<f:selectItem itemValue="1931" itemLabel="1931" />
+							<f:selectItem itemValue="1930" itemLabel="1930" />
+							<f:selectItem itemValue="1929" itemLabel="1929" />
+							<f:selectItem itemValue="1928" itemLabel="1928" />
+							<f:selectItem itemValue="1927" itemLabel="1927" />
+							<f:selectItem itemValue="1926" itemLabel="1926" />
+							<f:selectItem itemValue="1925" itemLabel="1925" />
+							<f:selectItem itemValue="1924" itemLabel="1924" />
+							<f:selectItem itemValue="1923" itemLabel="1923" />
+							<f:selectItem itemValue="1922" itemLabel="1922" />
+							<f:selectItem itemValue="1921" itemLabel="1921" />
+							<f:selectItem itemValue="1920" itemLabel="1920" />
+							<f:selectItem itemValue="1919" itemLabel="1919" />
+							<f:selectItem itemValue="1918" itemLabel="1918" />
+							<f:selectItem itemValue="1917" itemLabel="1917" />
+							<f:selectItem itemValue="1916" itemLabel="1916" />
+							<f:selectItem itemValue="1915" itemLabel="1915" />
+							<f:selectItem itemValue="1914" itemLabel="1914" />
+							<f:selectItem itemValue="1913" itemLabel="1913" />
+							<f:selectItem itemValue="1912" itemLabel="1912" />
+							<f:selectItem itemValue="1911" itemLabel="1911" />
+							<f:selectItem itemValue="1910" itemLabel="1910" />
+							<f:selectItem itemValue="1909" itemLabel="1909" />
+							<f:selectItem itemValue="1908" itemLabel="1908" />
+							<f:selectItem itemValue="1907" itemLabel="1907" />
+							<f:selectItem itemValue="1906" itemLabel="1906" />
+							<f:selectItem itemValue="1905" itemLabel="1905" />
+							<f:selectItem itemValue="1904" itemLabel="1904" />
+							<f:selectItem itemValue="1903" itemLabel="1903" />
+							<f:selectItem itemValue="1902" itemLabel="1902" />
+							<f:selectItem itemValue="1901" itemLabel="1901" />
+							<f:selectItem itemValue="1900" itemLabel="1900" />
+						</h:selectOneMenu></td>
+				</tr>
+				<tr>
+					<td><h:outputText value="Peso:" /></td>
+					<td><h:inputText id="peso" /> <h:outputText value="Kg" /></td>
+				</tr>
+				<tr>
+					<td><h:outputText value="Grupo Sanguineo:" /></td>
+					<td><h:selectOneMenu id="rh" style="width: 154px; ">
+							<f:selectItem itemValue="Seleccione uno"
+								itemLabel="Seleccione uno" />
+							<f:selectItem itemValue="O-" itemLabel="O-" />
+							<f:selectItem itemValue="O+" itemLabel="O+" />
+							<f:selectItem itemValue="A-" itemLabel="A-" />
+							<f:selectItem itemValue="A+" itemLabel="A+" />
+							<f:selectItem itemValue="B-" itemLabel="B-" />
+							<f:selectItem itemValue="B+" itemLabel="B+" />
+							<f:selectItem itemValue="AB-" itemLabel="AB-" />
+							<f:selectItem itemValue="AB+" itemLabel="AB+" />
+						</h:selectOneMenu></td>
+				</tr>
+				<tr>
+					<td><h:outputText value="Eps:" /></td>
+					<td><h:inputText id="eps" /></td>
+				</tr>
+				<tr>
+					<td><h:outputText value="Genero:" /></td>
+					<td><h:selectOneMenu id="genero" style="width: 155px; ">
+							<f:selectItem itemValue="Seleccione uno"
+								itemLabel="Seleccione uno" />
+							<f:selectItem itemValue="Masculino" itemLabel="Masculino" />
+							<f:selectItem itemValue="Femenimo" itemLabel="Femenino" />
+						</h:selectOneMenu></td>
+				</tr>
+			</table>
+			<p>
+				<h:commandButton value="Aceptar" />
+			</p>
+			<h:messages style="color:red" />
+		</form>
+	</f:view>
+</h:body>
+</html>
